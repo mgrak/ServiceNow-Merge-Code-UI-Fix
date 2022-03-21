@@ -21,12 +21,14 @@ var observer = new MutationObserver(function (mutations) {
 					var d = document.querySelectorAll('.CodeMirror-merge .CodeMirror');
 					var e = document.querySelectorAll('.CodeMirror-merge-gap');
 					var f = document.querySelectorAll('svg:not(:root)');
+					var g = document.querySelectorAll('.modal-footer');
                     b[0].style.height = '100%';
                     c[0].style.height = '100%';
                     d[0].style.height = '750px';
 					d[1].style.height = '750px';
 					e[0].style.height = '750px';
 					f[0].style.height = '100% !important';
+					g[0].style.paddingTop = '400px';
                 } catch (e) {}
 
             }
