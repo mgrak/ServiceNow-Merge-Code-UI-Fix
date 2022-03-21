@@ -1,0 +1,38 @@
+.navbar.navbar-title {
+	color: #ff;
+}
+.navbar .navbar-title {
+	color: #ff;
+}
+.CodeMirror-merge .CodeMirror-merge-2pane { 
+height:1650px !important;
+}
+
+.navbar.navbar-title {
+    font-size: 100px;
+    font-weight: bold;
+    margin: 9px 0 9px 5px;
+    vertical-align: middle;
+    color: #ffffff;
+}
+
+.modal-95{   
+	width: 95%;
+    height: 95% !important;
+}
+
+#modal-95{   
+	width: 95%;
+    height: 95% !important;
+}
+
+    
+	
+.navbar .navbar-title {
+    font-size: 130px;
+    font-weight: bold;
+    margin: 9px 0 9px 5px;
+    vertical-align: middle;
+    color: #ffffff;
+}
+

@@ -1,0 +1,37 @@
+{
+    "name": "Merge Code UI",
+    "description": "A chrome extension to fix the UI render for ServiceNow UI for the Merge Form Field Modal",
+    "version": "1.0",
+    "manifest_version": 3,
+    "permissions": [
+        "contextMenus",
+        "notifications",
+        "storage",
+        "activeTab",
+        "declarativeContent"
+    ],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+            "48": "/assets/icons/48.png",
+            "128": "/assets/icons/128.png"
+        }
+    },
+    "icons": {
+        "48": "/assets/icons/48.png",
+        "128": "/assets/icons/128.png"
+    },
+    "content_scripts": [{
+            "matches": ["https://*.service-now.com/merge_form_current_version.do*",
+                "http://*.service-now.com/merge_form_current_version.do*",
+                "https://pnmacdev2.service-now.com/styles/heisenberg/heisenberg_all.cssx*"],
+            "js": ["jquery-3.6.0.js", "content.js"],
+            "css": ["styles.css"],
+            "run_at": "document_end"
+
+        }
+    ]
+}
