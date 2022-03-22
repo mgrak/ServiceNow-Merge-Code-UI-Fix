@@ -27,11 +27,16 @@
     "content_scripts": [{
             "matches": ["https://*.service-now.com/merge_form_current_version.do*",
                 "http://*.service-now.com/merge_form_current_version.do*",
-                "https://pnmacdev2.service-now.com/styles/heisenberg/heisenberg_all.cssx*"],
+                "https://*.service-now.com/styles/heisenberg/heisenberg_all.cssx*"],
             "js": ["jquery-3.6.0.js", "content.js"],
             "css": ["styles.css"],
             "run_at": "document_end"
-
-        }
+        },
+		{
+			"matches": ["https://*.service-now.com/sys.scripts.do*"],
+            "js": ["jquery-3.6.0.js", "content.js"],
+            "css": ["bgscript.css"],
+            "run_at": "document_end"
+		}
     ]
 }
