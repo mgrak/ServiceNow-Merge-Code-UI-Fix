@@ -31,12 +31,12 @@
             "js": ["jquery-3.6.0.js", "content.js"],
             "css": ["styles.css"],
             "run_at": "document_end"
-        },
-		{
-			"matches": ["https://*.service-now.com/sys.scripts.do*"],
-            "js": ["jquery-3.6.0.js", "content.js"],
-            "css": ["bgscript.css"],
+        }, {
+            "matches": ["https://*.service-now.com/sys.scripts.do*",
+                "https://*.service-now.com/*sys.scripts.do*"],
+            "all_frames": true,
+			"css": ["bgscript.css"],
             "run_at": "document_end"
-		}
+        }
     ]
 }
