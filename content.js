@@ -14,6 +14,8 @@ var observer = new MutationObserver(function (mutations) {
             if (hasClass) {
                 // element has class `MyClass`
                 //console.log('element ".MyClass" added');
+				var height = window.innerHeight - 200;
+				
                 try {
                     var b = document.querySelectorAll('.modal-content');
                     var c = document.querySelectorAll('.modal-95');
@@ -24,11 +26,11 @@ var observer = new MutationObserver(function (mutations) {
 					var g = document.querySelectorAll('.modal-footer');
                     b[0].style.height = '100%';
                     c[0].style.height = '100%';
-                    d[0].style.height = '750px';
-					d[1].style.height = '750px';
-					e[0].style.height = '750px';
+                    d[0].style.height = height + 'px';
+					d[1].style.height = height + 'px';
+					e[0].style.height = height + 'px';
 					f[0].style.height = '100% !important';
-					g[0].style.paddingTop = '400px';
+					g[0].style.paddingTop =  (window.innerHeight - 560) + 'px';
                 } catch (e) {}
 
             }
