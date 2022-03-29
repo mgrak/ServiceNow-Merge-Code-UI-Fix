@@ -12,3 +12,9 @@ chrome://extensions
 4) Click Load Unpacked
 5) Choose folder you created
 
+###Features:
+
+1) Makes the Merge Code / Comparison UI Full screen
+2) Makes Background Scripts UI Full Screen
+3) Auto checks "Do not challenge for MFA on this browser for the next 24 hours" on the support.service-now.com login
+
