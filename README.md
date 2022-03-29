@@ -12,7 +12,7 @@ chrome://extensions
 4) Click Load Unpacked
 5) Choose folder you created
 
-###Features:
+### Features:
 
 1) Makes the Merge Code / Comparison UI Full screen
 2) Makes Background Scripts UI Full Screen
