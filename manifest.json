@@ -39,7 +39,7 @@
             "run_at": "document_end"
         },
 		{
-            "matches": ["https://signon.service-now.com/x_snc_sso_auth.do"],
+            "matches": ["https://signon.service-now.com/x_snc_sso_auth.do*"],
             "all_frames": true,
 			"js": ["dontchallenge.js"],
             "run_at": "document_end"
