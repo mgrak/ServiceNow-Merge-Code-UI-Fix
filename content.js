@@ -28,6 +28,7 @@ var observer = new MutationObserver(function (mutations) {
 					var g = document.querySelectorAll('.modal-footer');
 					var h = document.querySelectorAll('#merge_view');
 					var i = document.querySelectorAll('#merge_view > div');
+					var x = document.querySelectorAll('#merge_view > div > div.CodeMirror-merge-pane.CodeMirror-merge-left > div > div.CodeMirror-vscrollbar')
                     a[0].style['overflow-y'] = 'hidden';
 					b[0].style.height = '100%';
                     c[0].style.height = '100%';
@@ -38,6 +39,7 @@ var observer = new MutationObserver(function (mutations) {
 					i[0].style.height = height + 'px';
 					f[0].style.height = '100% !important';
 					//g[0].style.paddingTop =  (window.innerHeight - 560) + 'px';
+					x[0].scrollBy(0,1);					
                 } catch (e) {}
 
             }
