@@ -1,5 +1,5 @@
 console.clear();
-//console.log('TEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE');
+console.log('TEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE');
 
 var observer = new MutationObserver(function (mutations) {
     mutations.forEach(function (mutation) {
@@ -12,11 +12,13 @@ var observer = new MutationObserver(function (mutations) {
                 return el.classList + ''
             });
             if (hasClass) {
-                // element has class `MyClass`
+                //element has class `MyClass`
                 //console.log('element ".MyClass" added');
-				var height = window.innerHeight - 200;
+				var height = window.innerHeight - 210;
 				
                 try {
+					console.log('💩 setting dom');
+					var a = document.querySelectorAll('#merge_form_field_modal');
                     var b = document.querySelectorAll('.modal-content');
                     var c = document.querySelectorAll('.modal-95');
                     //var d = document.querySelectorAll('.CodeMirror-merge');
@@ -24,13 +26,18 @@ var observer = new MutationObserver(function (mutations) {
 					var e = document.querySelectorAll('.CodeMirror-merge-gap');
 					var f = document.querySelectorAll('svg:not(:root)');
 					var g = document.querySelectorAll('.modal-footer');
-                    b[0].style.height = '100%';
+					var h = document.querySelectorAll('#merge_view');
+					var i = document.querySelectorAll('#merge_view > div');
+                    a[0].style['overflow-y'] = 'hidden';
+					b[0].style.height = '100%';
                     c[0].style.height = '100%';
                     d[0].style.height = height + 'px';
 					d[1].style.height = height + 'px';
 					e[0].style.height = height + 'px';
+					h[0].style.height = height + 'px';
+					i[0].style.height = height + 'px';
 					f[0].style.height = '100% !important';
-					g[0].style.paddingTop =  (window.innerHeight - 560) + 'px';
+					//g[0].style.paddingTop =  (window.innerHeight - 560) + 'px';
                 } catch (e) {}
 
             }
