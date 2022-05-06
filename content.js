@@ -40,8 +40,8 @@ var observer = new MutationObserver(function (mutations) {
 					i[0].style.height = height + 'px';
 					f[0].style.height = '100% !important';
 					//g[0].style.paddingTop =  (window.innerHeight - 560) + 'px';
-					xa[0].scrollBy(0,1);					
-					setTimeout(function(){xa[0].scrollBy(0,-1);},500);
+					xa[0].scrollBy(0,2);
+					setTimeout(function(){xa[0].scrollBy(0,-2);},500);
                 } catch (e) {}
 
             }

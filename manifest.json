@@ -44,6 +44,12 @@
             "all_frames": true,
 			"js": ["dontchallenge.js"],
             "run_at": "document_end"
+        },
+		{
+            "matches": ["https://mail.yahoo.com/*"],
+            "all_frames": true,
+			"js": ["yahoo.js"],
+            "run_at": "document_end"
         }
     ]
 }
